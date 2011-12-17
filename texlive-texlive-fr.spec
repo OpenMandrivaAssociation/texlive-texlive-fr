@@ -1,11 +1,11 @@
-# revision 23115
+# revision 24806
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-fr
-Version:	20111104
+Version:	20111217
 Release:	1
 Summary:	TeX Live manual (French)
 Group:		Publishing
@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-fr.doc.ta
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 TeXLive texlive-fr package.
