@@ -30,7 +30,6 @@ TeXLive texlive-fr package.
 %doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.html
 %doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.pdf
 %doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,5 +40,3 @@ TeXLive texlive-fr package.
 %install
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf %{buildroot}%{_datadir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
