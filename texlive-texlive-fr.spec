@@ -1,11 +1,11 @@
-# revision 26782
+# revision 30777
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-fr
-Version:	20120808
+Version:	20131009
 Release:	1
 Summary:	TeX Live manual (French)
 Group:		Publishing
@@ -22,14 +22,14 @@ TeXLive texlive-fr package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdir}/doc/texlive/texlive-fr/Makefile
-%doc %{_texmfdir}/doc/texlive/texlive-fr/live4ht.cfg
-%doc %{_texmfdir}/doc/texlive/texlive-fr/notes
-%doc %{_texmfdir}/doc/texlive/texlive-fr/tex-live.css
-%doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.css
-%doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.html
-%doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.pdf
-%doc %{_texmfdir}/doc/texlive/texlive-fr/texlive-fr.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/Makefile
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/live4ht.cfg
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/notes
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/tex-live.css
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.css
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.html
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.pdf
+%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -38,27 +38,5 @@ TeXLive texlive-fr package.
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120808-1
-+ Revision: 812903
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111217-2
-+ Revision: 756633
-- Rebuild to reduce used resources
-
-* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111217-1
-+ Revision: 743344
-- texlive-texlive-fr
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111104-1
-+ Revision: 719696
-- texlive-texlive-fr
-- texlive-texlive-fr
-- texlive-texlive-fr
-- texlive-texlive-fr
-
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar doc %{buildroot}%{_texmfdistdir}
