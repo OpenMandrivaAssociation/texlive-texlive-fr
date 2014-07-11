@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-texlive-fr
 Version:	20131009
-Release:	6
+Release:	7
 Summary:	TeX Live manual (French)
 Group:		Publishing
 URL:		http://tug.org/texlive
