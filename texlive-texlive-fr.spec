@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-fr
-Version:	20180428
-Release:	2
+Version:	20180904
+Release:	1
 Summary:	TeX Live manual (French)
 Group:		Publishing
 URL:		http://tug.org/texlive
