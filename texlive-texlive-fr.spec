@@ -1,6 +1,6 @@
 Name:		texlive-texlive-fr
 Version:	63071
-Release:	1
+Release:	2
 Summary:	TeX Live manual (French)
 Group:		Publishing
 URL:		http://tug.org/texlive
