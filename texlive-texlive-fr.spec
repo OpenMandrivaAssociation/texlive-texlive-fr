@@ -1,5 +1,5 @@
 Name:		texlive-texlive-fr
-Version:	70462
+Version:	70783
 Release:	1
 Summary:	TeX Live manual (French)
 Group:		Publishing
