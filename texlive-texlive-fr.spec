@@ -1,36 +1,19 @@
-Name:		texlive-texlive-fr
-Version:	74301
+%global tl_name texlive-fr
+%global tl_revision 78031
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
 Release:	1
 Summary:	TeX Live manual (French)
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-fr.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-fr.doc.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/texlive-fr
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-fr.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/texlive-fr.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-TeXLive texlive-fr package.
+TeX Live manual (French)
 
-#-----------------------------------------------------------------------
-%files
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/Makefile
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/live4ht.cfg
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/notes
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/tex-live.css
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.css
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.html
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.pdf
-%doc %{_texmfdistdir}/doc/texlive/texlive-fr/texlive-fr.tex
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar doc %{buildroot}%{_texmfdistdir}
